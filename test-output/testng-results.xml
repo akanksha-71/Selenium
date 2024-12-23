@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-12-22T22:36:23 IST" name="Default suite" finished-at="2024-12-22T22:36:30 IST" duration-ms="7420">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.test@394df057]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2024-12-22T22:36:23 IST" name="Default test" finished-at="2024-12-22T22:36:30 IST" duration-ms="7420">
+      <class name="runners.test">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.test@394df057]" started-at="2024-12-22T22:36:23 IST" name="setUpClass" finished-at="2024-12-22T22:36:24 IST" duration-ms="960" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1ddc6db2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.test@394df057]" started-at="2024-12-22T22:36:24 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-12-22T22:36:30 IST" duration-ms="6311" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User clicks on a navigation link and is redirected to the correct category page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)" because "this.navBar" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)" because "this.navBar" is null
+at page.NavigatePage.clickNavigationLink(NavigatePage.java:44)
+at steps.Navigate.user_clicks_on_the_link_in_the_navigation_bar(Navigate.java:50)
+at ✽.User clicks on the "Books" link in the navigation bar(file:///C:/Users/AKANKSHA/eclipse-workspace/BDD/src/test/java/feature/Log.feature:51)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.test@394df057]" started-at="2024-12-22T22:36:30 IST" name="tearDownClass" finished-at="2024-12-22T22:36:30 IST" duration-ms="66" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runners.test -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
